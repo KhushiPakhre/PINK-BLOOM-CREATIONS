@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height:40px;
+    width: 60px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: underline;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kalnia', serif;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo span{
+    cursor: pointer;
+    padding: 8px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+.bannerText h1{
+ font-size: 2rem;
+}
+.bannerText p{
+    text-align: justify;
+}
+.bannerText a{
+    text-align: center;
+    text-decoration: none;
+    background-color:hotpink ;
+    color: black;
+    border: 0px solid transparent;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: .4s;
+}
+.bannerText a:hover{
+    background: transparent;
+}
+.bannerImage{
+width: 100%;
+}
+.Top-Rated h2{
+    text-align: center;
+    font-size: 3rem;
+}
+.CARDS{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    gap: 0.1rem;
+}
+.card{
+    
+width:300px;
+height: 300px;
+border: 5px solid hotpink;
+border-radius: 5px;
+padding: 6px;
+}
+.cardImg img{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    
+}
+.card h3{
+    color: hotpink;
+}
+.card a{
+    text-align: center;
+    text-decoration: none;
+    background-color:hotpink ;
+    color: black;
+    border: 0px solid transparent;
+    font-weight: bold;
+    padding: 3px 5px;
+    border-radius: 5px;
+    transition: .4s;
+}
+.card a:hover{
+    background: transparent;
+}
+
+
+@media only screen and (max-width:500px){
+    html{
+        font-size: 16px;
+        .CARDS{
+            display: grid;
+            grid-row: repeat(1,1fr);
+        }
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:850px) {
+    html{
+        font-size: 18px;
+        .CARDS{
+            display: grid;
+            grid-row: repeat(2,1fr);
+        }
+
+    }
+}
+@media only screen and (min-width:850px) and (max-width:1250px){
+html{
+    font-size: 20px;
+    .CARDS{
+        display: grid;
+        grid-row: repeat(4,1fr);
+    }
+}
+}
+@media only screen and (min-width:1250px){
+    html{
+        font-size: 20px;
+        .CARDS{
+            grid-template-columns: repeat(5.1fr);
+        }
+    }
+}
+.contact{
+    padding: 60px 17%;
+    display: flex;
+    background-color: hotpink;
+    font-weight: bold;
+    
+}
